@@ -24,7 +24,23 @@ function setup() {
        song2_status = song2.isPlaying();
        fill(#FF0000);
        stroke(#FF0000);
-       if(score)
+       if(score_RightWrist > 0.2){
+           circle(rightWristX,rightWristY,20);
+             song2.stop();
+             if(song_status == false){
+                   song.play
+                   document.getElementbyId("song").innerHTML = "Playing - I am Astro Bot (Playroom Remix)" 
+             }
+       }
+        if(score_LeftWrist > 0.2){
+           circle(lefttWristX,leftWristY,20);
+             song.stop();
+             if(song2_status == false){
+                   song2.play
+                   document.getElementbyId("song").innerHTML = "Playing - Crash Bandicoot Theme (Dubstep Remix)" 
+             }
+       }
+      
  }
   
 function preload(){
