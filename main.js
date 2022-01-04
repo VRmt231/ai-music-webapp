@@ -20,10 +20,15 @@ function setup() {
 
  function draw(){
      image(video, 0, 0, 600, 500);
+       song_status = song.isPlaying();
+       song2_status = song2.isPlaying();
+       fill(#FF0000);
+       stroke(#FF0000);
+       if(score)
  }
   
 function preload(){
-    song = loadSound("I Am Astro Bot (Playroom Remi.mp3")
+    song = loadSound("I Am Astro Bot (Playroom Remix).mp3")
     song2 = loadSound("Crash Bandicoot Theme (Dubstep Remix) [-1781544649755049919].mp3 ")
     song.setVolume(1);
     song.rate(1);
